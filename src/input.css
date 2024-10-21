@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #9864d1;
+        border-radius: 3em;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+}
+
+@media Screen and (min-width: 432px) and (max-width: 769px) {
+    html {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 431px) {
+        html {
+            font-size: 11px;
+        }
+    }
+}
